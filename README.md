@@ -1,6 +1,8 @@
 # JOMap
 Joint Operations Typhoon Rising Base Assault Mission fixed after export. Includes the 05TR.mis, 05TR.wac, 05TR.dbf, and 05TR.bms files. Working mission and complete exported mission file for editing.
 
+Simply download and place all files within your Joint Operations MAIN directory, you should see Jointops.exe if you are in the right directory.
+
 IMPORTANT: 
   * The mission has been exported from the 1.0.0 version of the game. Little to nothing that was originally in the mission was removed, BUT my own flavour has been added to the map.
   
@@ -12,4 +14,5 @@ IMPORTANT:
 
   * 05TR.wac is edited and not the original, but the original can easily be found witin the game files. The two important flavour additions are: friendly-fire no longer ends the mission, and there are a lot of mortars hitting the island
 
- THE MAIN PURPOSE OF THIS IS TO HAVE THIS OLD PIECE OF GAME HISTORY AVAILABLE FOR LEARNING AND GOING THROUGH YOUR NOSTALGIA HIT.
+ THE MAIN PURPOSE OF THIS IS TO HAVE THIS OLD PIECE OF GAME HISTORY AVAILABLE FOR DOWNLOAD, BUT ALSO TO HAVE A COPY OF THIS MAP FOR MYSELF.
+ 
