@@ -1,0 +1,110 @@
+	
+//End Mission if player kills Friendly AI
+//If true(bluekills) or true(greenkills) then
+//
+//            Lose (0)
+//
+//endif
+// area 22 is friendly heli
+// area 21 is friendly two boats at village
+// area 23 is friendly boat player drives
+// area 24 is entire enemy island
+// area 25 is friendly heli player drives
+// area 7 is friendly boat
+// area 3 is friendly stryker
+// area 2 is friendly bunker
+// area 11 LARGER area of enemy island (more water included)
+
+ammoarea AMMO_AMMO_60MM_MORTAR 24
+//ammoarea AMMO_AMMO_60MM_MORTAR 24
+//ammoarea AMMO_AMMO_60MM_MORTAR 24
+
+// below is enemy group spawns
+groupSpawn(23, 1)
+groupSpawn(40, 1)
+groupSpawn(19, 1)
+groupSpawn(22, 1)
+groupSpawn(21, 1)
+groupSpawn(20, 1)
+groupSpawn(30, 1)
+groupSpawn(29, 1)
+groupSpawn(28, 1)
+groupSpawn(4, 1)
+groupSpawn(3, 1)
+groupSpawn(8, 1)
+groupSpawn(26, 1)
+groupSpawn(16, 1)
+groupSpawn(0, 1)
+groupSpawn(46, 1)
+groupSpawn(27, 1)
+groupSpawn(31, 1)
+groupSpawn(24, 1)
+groupSpawn(32, 1)
+
+// below is friendly group spawns
+groupSpawn(47, 1)
+groupSpawn(13, 1)
+groupSpawn(14, 1)
+groupSpawn(15, 1)
+groupSpawn(45, 1)
+groupSpawn(17, 1)
+groupSpawn(9, 1)
+groupSpawn(10, 1)
+groupSpawn(44, 1)
+groupSpawn(35, 1)
+groupSpawn(34, 1)
+groupSpawn(39, 1)
+groupSpawn(48, 1)
+groupSpawn(38, 1)
+groupSpawn(37, 1)
+groupSpawn(36, 1)
+groupSpawn(39, 1)
+
+//Zodiac
+if area(24) and eq(v1, 1) and not meride(691) then
+	set(v1, 2) 
+endif
+
+//HELO
+if area(24) and eq(v2, 1) and not meride(423) then
+	set(v2, 2) 
+endif
+
+//STRYKER
+if area(24) and eq(v5, 1) and not meride(21) then
+	set(v5, 2) 
+endif
+
+//AAV ride as gunner
+if area(24) and not meride(615) then
+	set(v6, 2) 
+endif
+
+//AAV ride as driver
+if area(24) and eq(v7, 1) and not meride(616) then
+	set(v7, 2) 
+endif
+
+//AAV on LCAC
+if area(24) and eq(v3, 1) and ssnonssn(615, 18) then
+	set(v3, 2) 
+endif
+
+
+
+
+//Stop the Spawning!!  GroupSpawn(group, spawn count)
+//if area(6) and never then
+//	groupSpawn(23, 0)
+//	groupSpawn(40, 0)
+//	groupSpawn(19, 0)
+//	groupSpawn(22, 0)
+//	groupSpawn(21, 0)
+//	groupSpawn(20, 0)
+//	groupSpawn(30, 0)
+//	groupSpawn(29, 0)
+//	groupSpawn(28, 0)
+//endif 
+	
+	
+
